@@ -1,0 +1,13 @@
+{
+    "name": "CustomButtonYoutube",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Youtube ytp-button customizer",
+    "content_scripts": [{
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "css": ["style.css"],
+      "js": [
+        "content.js"
+      ]
+    }]
+  }
