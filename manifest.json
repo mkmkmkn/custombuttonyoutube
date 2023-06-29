@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "manifest_version": 3,
     "description": "Youtube ytp-button customizer",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "options_page": "options.html",
     "content_scripts": [{
       "matches": ["https://www.youtube.com/watch?v=*"],
       "css": ["style.css"],
