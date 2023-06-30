@@ -7,7 +7,7 @@
     "options_page": "options.html",
     "content_scripts": [{
       "matches": ["https://www.youtube.com/watch?v=*"],
-      "css": ["style.css"],
+      "css": ["assets/css/style.css"],
       "js": [
         "content.js"
       ]

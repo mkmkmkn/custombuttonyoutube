@@ -1,0 +1,34 @@
+.showControls {
+    display: inline-block!important;
+}
+.hiddenControls {
+    display: none!important;
+}
+.ytp-pip-button {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        top: 20%;
+        left: 48.5%;
+        position: absolute;
+        border-top: 3px solid #fff;
+        border-left: 3px solid #fff;
+        border-radius: 1.5px;
+        transform: translate( 0, -50%) rotate(45deg);
+    }
+    &::after {
+        content: "";
+        width: 3px;
+        height: 16px;
+        top: 24%;
+        left: 56%;
+        box-sizing: border-box;
+        position: absolute;
+        border-left: 3px solid #fff;
+        border-radius: 1.5px;
+        transform: translate( 0, -50%);
+    }
+}

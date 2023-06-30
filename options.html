@@ -5,12 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/options.css">
 </head>
 <body>
     <h1>Options</h1>
-    <div>
-        <button class="hiddenButton" style="background: #f3f">Hidden</button>
-    </div>
+    <ul>
+        <li>
+            <div class="buttonIcon">skip_next</div>
+            <p class="buttonLabel">next</p>
+            <button class="hiddenButton" value="next">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">play_circle</div>
+            <p class="buttonLabel">autonav</p>
+            <button class="hiddenButton" value="autonav">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">subtitles</div>
+            <p class="buttonLabel">subtitles</p>
+            <button class="hiddenButton" value="subtitles">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">settings</div>
+            <p class="buttonLabel">settings</p>
+            <button class="hiddenButton" value="settings">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">switch_camera</div>
+            <p class="buttonLabel">multicam</p>
+            <button class="hiddenButton" value="multicam">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">branding_watermark</div>
+            <p class="buttonLabel">miniplayer</p>
+            <button class="hiddenButton" value="miniplayer">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">branding_watermark</div>
+            <p class="buttonLabel">picture-in-picture<br>(Always on bottom right of display)</p>
+            <button class="hiddenButton" value="pip">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">crop_3_2</div>
+            <p class="buttonLabel">size</p>
+            <button class="hiddenButton" value="size">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">cast</div>
+            <p class="buttonLabel">remote<br>(cast)</p>
+            <button class="hiddenButton" value="remote">loading...</button>
+        </li>
+        <li>
+            <div class="buttonIcon">fullscreen</div>
+            <p class="buttonLabel">fullscreen</p>
+            <button class="hiddenButton" value="fullscreen">loading...</button>
+        </li>
+    </ul>
     <script src="options.js"></script>
 </body>
 </html>
