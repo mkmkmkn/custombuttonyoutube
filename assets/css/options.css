@@ -25,6 +25,8 @@ ul {
   box-sizing: border-box;
   background-color: #fff;
   color: #eee;
+  border-radius: 3px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 ul li {
   height: 4rem;
@@ -35,6 +37,7 @@ ul li {
   justify-content: space-between;
   align-items: center;
   background-color: #444;
+  border-radius: 3px;
 }
 ul li .buttonIcon {
   width: 2.75rem;
@@ -48,6 +51,20 @@ ul li .buttonIcon {
 }
 ul li:nth-child(-n+5) .buttonIcon {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+ul li:nth-child(2) .buttonIcon {
+  font-size: 1.75rem;
+  justify-content: flex-end;
+  position: relative;
+}
+ul li:nth-child(2) .buttonIcon::after {
+  content: "";
+  width: 52%;
+  height: 1rem;
+  left: 6%;
+  background-color: #eee;
+  position: absolute;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 ul li:nth-child(7) .buttonIcon {
   position: relative;
@@ -83,4 +100,8 @@ ul li .buttonLabel {
 ul li .hiddenButton {
   width: 6rem;
   height: 2.625rem;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 }/*# sourceMappingURL=options.css.map */
