@@ -3,7 +3,7 @@ document.querySelectorAll(".hiddenButton").forEach((elm) => {
     // データの取得
     chrome.storage.sync.get(null, function (options) {
         let hiddenItem = elm.value;
-        console.log(hiddenItem, options[hiddenItem]);
+        // console.log(hiddenItem, options[hiddenItem]);
         
         // ボタンの文字変更
         if (typeof options[hiddenItem] === "undefined") {
@@ -24,7 +24,7 @@ document.querySelectorAll(".hiddenButton").forEach((elm) => {
 
             // 初回はデータが存在しないため新たに作成する
             if (typeof options[hiddenItem] === "undefined") {
-                console.log(hiddenItem, "undefined => true");
+                // console.log(hiddenItem, "undefined => true");
                 options[hiddenItem] = true;
                 elm.textContent = "hidden";
             } else {
